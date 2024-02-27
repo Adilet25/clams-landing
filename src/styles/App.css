@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 85%;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.colors {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+/* color styles */
+.color1 {
+  top: -100px;
+}
+.color2 {
+  top: 650px;
+}
+.color3 {
+  top: 990px;
+}
+.color4 {
+  top: 1600px;
+}
+/* Header styles */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.header > img {
+  width: 3rem;
+}
+.header > div {
+  display: flex;
+  flex-direction: row;
+}
+.header > div > a {
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+/* Section styles */
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  z-index: 2;
+
+  width: 100%;
+}
+.sectionInfo {
+  width: 40%;
+  font-size: larger;
+}
+.sectionInfo > p {
+  margin-top: 2rem;
+}
+.btnotoz {
+  font-weight: 600;
+  width: 14rem;
+  height: 3rem;
+  background-color: #386df4;
+  border-radius: 5px;
+  color: white;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.section > img {
+  width: 50%;
+}
+
+/* subscribe section styles */
+
+.subsSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.subsSection_variants {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.subsSection_card {
+  width: 25%;
+  height: 100%;
+  padding: 3rem 4rem 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 5px;
+  line-height: 2rem;
+}
+.cardbtn {
+  width: 100% !important;
+  margin: 2rem 0 0 0 !important;
+}
+
+/* Zayvka Section */
+
+.zayvkaSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #386df4;
+  color: white;
+  padding: 4rem 0;
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.inpZayv {
+  width: 40%;
+  height: 3rem;
+}
+.inpZayv::placeholder {
+  font-size: larger;
+}
+.zayvkaSection > div > h2 {
+  margin-bottom: 2rem;
+}
+.zayvkaSection > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.zayavkabtn {
+  background-color: white !important;
+  color: black !important;
+  height: 3rem !important;
+  border-radius: 0 !important;
+  margin: 0 0 0 2rem !important;
+}
+
+/* footer styles */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  margin-top: 5rem;
+  background-color: black;
+  color: white;
+}
+.footer > * {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer > img {
+  width: 5rem;
+  height: 5rem;
+}
+.footerInfo {
+  align-items: end;
+}
+.footerInfo > div {
+  display: flex;
+  flex-direction: column;
+}
+.footerInfo > div > a {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column-reverse;
+  }
+  .sectionInfo {
+    width: 100%;
+  }
+  .section > img {
+    width: 100%;
+  }
+  .footer {
+    font-size: small;
+    padding: 2rem 1rem;
+  }
+  .footer > * {
+    width: 50%;
+  }
+  .footerlogo {
+    display: none;
+  }
+  .subsSection_variants {
+    flex-direction: column;
+  }
+  .subsSection_card {
+    width: 60%;
+    margin-top: 2rem;
+  }
+  .changedire {
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .zayvkaSection > div > div {
+    flex-direction: column;
+  }
+  .inpZayv {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .zayavkabtn {
+    margin: 1rem 0 !important;
+    width: 100%;
+  }
+}
