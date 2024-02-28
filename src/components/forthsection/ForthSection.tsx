@@ -7,13 +7,13 @@ const ForthSection = () => {
           <h3>Мелкие предприятия</h3>
           <h2>30$ / в месяц</h2>
           <p>На 30 дней за один филиал</p>
-          <p className="btnotoz cardbtn">Оставить заявку</p>
+          <a href="#zayavka" className="btnotoz cardbtn">Оставить заявку</a>
         </div>
         <div className="subsSection_card">
           <h3>Крупные предприятия</h3>
           <h2>80$ / в месяц</h2>
           <p>На 30 дней за один филиал</p>
-          <p className="btnotoz cardbtn">Оставить заявку</p>
+          <a href="#zayavka" className="btnotoz cardbtn">Оставить заявку</a>
         </div>
       </div>
     </div>

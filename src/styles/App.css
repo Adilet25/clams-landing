@@ -8,6 +8,7 @@
   flex-direction: column;
   margin: 0 auto;
   width: 85%;
+  z-index: 3;
 }
 a {
   cursor: pointer;
@@ -35,6 +36,7 @@ a {
 }
 /* Header styles */
 .header {
+  z-index: 3;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -65,7 +67,6 @@ a {
   justify-content: space-between;
   margin-top: 3rem;
   z-index: 2;
-
   width: 100%;
 }
 .sectionInfo {
@@ -98,6 +99,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  z-index: 2;
 }
 .subsSection_variants {
   display: flex;
@@ -125,6 +127,7 @@ a {
 /* Zayvka Section */
 
 .zayvkaSection {
+  z-index: 3;
   display: flex;
   flex-direction: column;
   background-color: #386df4;
@@ -137,6 +140,7 @@ a {
 .inpZayv {
   width: 40%;
   height: 3rem;
+  padding-left: 10px;
 }
 .inpZayv::placeholder {
   font-size: larger;
@@ -148,6 +152,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
 }
 .zayavkabtn {
   background-color: white !important;
@@ -168,6 +173,7 @@ a {
   margin-top: 5rem;
   background-color: black;
   color: white;
+  z-index: 2;
 }
 .footer > * {
   width: 33%;
@@ -224,6 +230,7 @@ a {
 @media screen and (max-width: 768px) {
   .zayvkaSection > div > div {
     flex-direction: column;
+    gap: 0;
   }
   .inpZayv {
     width: 100%;

@@ -1,6 +1,6 @@
 const FiveSection = () => {
   return (
-    <div className="zayvkaSection">
+    <div id="zayavka" className="zayvkaSection">
       <div className="container ">
         <h2>Оставьте заявку на подключение</h2>
         <div>

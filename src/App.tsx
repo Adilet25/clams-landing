@@ -21,11 +21,10 @@ function App() {
       <img src={color4} alt="" className="colors color4" />
 
       <div className="container">
-        <Header />
+        <Header/>
         <MainSection />
         <SecondSection />
         <ThirdSection />
-
         <ForthSection />
       </div>
       <FiveSection />

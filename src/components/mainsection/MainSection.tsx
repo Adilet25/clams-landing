@@ -11,7 +11,7 @@ const MainSection = () => {
           услуг для оптимизации и повышения эффективности систем
           видеонаблюдения.
         </p>
-        <p className="btnotoz">Оставить заявку</p>
+        <a href="#zayavka" className="btnotoz">Оставить заявку</a>
       </div>
       <img src={laptop} alt="error" />
     </div>
